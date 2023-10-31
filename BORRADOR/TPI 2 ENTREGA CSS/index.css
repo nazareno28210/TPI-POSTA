@@ -1,0 +1,99 @@
+:root{
+ /*------------creo variables sobre dos colores-----------------------*/ 
+  --primary: #2f2f2f;
+  --secondary: rgb(129, 31, 31);
+}
+*{
+  
+  margin: 0;
+  padding: 0;
+  box-sizing:border-box;
+  list-style: none;
+}
+
+
+body {
+   /*------------------importo la imagen de la escuela-----------------*/ 
+
+  background: url(backgroundpc.JPG) no-repeat center center fixed;   /*------------elijo la imagen que quero de fondo-----------------------*/ 
+  -webkit-background-size: cover ;
+  -moz-background-size: contain;
+  -o-background-size:cover ;
+  background-size: cover;
+  
+
+}
+
+.nav {
+   /*----------------barra de navegacion-------------------*/ 
+
+  width: 100%;    /*----------------configuro el ancho-------------------*/
+  background-color: var(--primary);   /*-------------que el color de fondo sea var primary----------------------*/ 
+  padding: 20px;
+  display: flex; 
+  justify-content: flex-end;
+  box-shadow: 1px 1px 10px 1px rgb(0,0 0green, blue);/*----------le coloco sombra-------------------------*/
+  top: 0; 
+}
+
+.container {
+   /*---------------la disposición de mi barra de navegación --------------------*/ 
+   background-color: var(--primary);
+
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  justify-content: flex-start;   
+}
+
+.nav a{
+   /*----------------defino que solo qiero modificar las letras a de nav-------------------*/ 
+
+color: #fff;   /*-------------declaro el color de las letras ----------------------*/ 
+text-decoration: none;   /*-----------------saco el subrallado------------------*/ 
+margin-right: 10px;  
+font-size: 10px;    
+
+}
+
+.nav a:hover { 
+color: var(--secondary);
+
+
+}
+
+
+/*-------------------------------------------------------------------------------------------*/
+
+.footercontact{
+  color: #fff;
+  text-align: center;
+  background-color: var(--primary);
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.logocolegio{
+ margin-right: 20px;
+ width:  150px;
+ height:  150px;
+}
+/*-------------------------------------------------------------------------------------------*/
+.dataescolar{
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: end;
+}
+.contentinfo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+.espavacio{
+  width:  170px;
+  height:  170px;
+}
